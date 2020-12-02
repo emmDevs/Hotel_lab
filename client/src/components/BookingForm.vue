@@ -4,9 +4,9 @@
         <h2>Add a Booking</h2>
         <div class="formWrap">
             <label for="name">Name:</label>
-            <input type="text" id="name" v-model="name">
+            <input type="text" id="name" v-model="name" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" v-model="email">
+            <input type="email" id="email" v-model="email" required>
             <label for="status">Checked in:</label>
             <input type="checkbox" id="status" v-model="status" >
 
