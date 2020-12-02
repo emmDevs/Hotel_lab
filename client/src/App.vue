@@ -1,5 +1,7 @@
 <template>
-<div>
+<div id="app">
+  <booking-form/>
+
 
 </div>
   
@@ -24,6 +26,10 @@ export default {
   },
   mounted() {
     this.fetchBookings();
+
+    eventBus.$on('booking-added', (booking) => {
+      this.bookings.push(booking)
+    })
   },
   methods: {
     fetchBookings(){
